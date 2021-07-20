@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Intercâmbio</title>
+    <link rel="stylesheet" href="/assets/libraries/materialize/css/materialize.css" />
+    <link rel="stylesheet" href="/assets/resources/styles/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="icon" />
+</head>
+
+<body>
+    <div id="nav"></div>
+    <div class="navbar-fixed">
+        <nav class="purple lighten-3">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="/index.html" class="brand-logo"><i
+                            class="material-icons large">airplanemode_active</i>Buscar
+                        vagas</a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="/app/about-us.html">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="/app/search.html">Buscar Vagas</a>
+                        </li>
+                        <li>
+                            <a href="/app/login.html"><i class="material-icons left ">account_circle</i>Login</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav purple lighten-3" id="slide-out">
+        <li>
+            <a href="/app/about-us.html">Sobre Nós</a>
+        </li>
+        <li>
+            <a href="/app/search.html">Buscar Vagas</a>
+        </li>
+        <li>
+            <a href="/app/login.html">Login</a>
+        </li>
+    </ul>
+    <main>
+        <!--INICIALIZAÇÃO MODAL-->
+        <div id="modalRU" class="modal">
+            <div class="modal-content">
+                <h2>PARABÉNS!</h2>
+                <p>Seu Intercâmbio para a Russia foi confirmado! Entraremos em contato pelo email! obrigado!</p>
+            </div>
+        </div>
+        <div id="modalJP" class="modal">
+            <div class="modal-content">
+                <h2>PARABÉNS!</h2>
+                <p>Seu Intercâmbio para Japão foi confirmado! Entraremos em contato pelo email! obrigado!</p>
+            </div>
+        </div>
+        <div id="modalFR" class="modal">
+            <div class="modal-content">
+                <h2>PARABÉNS!</h2>
+                <p>Seu Intercâmbio para a França foi confirmado! Entraremos em contato pelo email! obrigado!</p>
+            </div>
+        </div>
+        <div id="modalCA" class="modal">
+            <div class="modal-content">
+                <h2>PARABÉNS!</h2>
+                <p>Seu Intercâmbio para o Canadá foi confirmado! Entraremos em contato pelo email! obrigado!</p>
+            </div>
+        </div>
+        <!--VAGAS-->
+        <div class="row container">
+            <div class="col s6 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="responsive-img" src="/assets/resources/images/russsia.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h6">São Petesburgo - Russia</h6>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modalRU"
+                            class="btn waves-effect waves-light modal-trigger purple darken-3">Confirmar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="responsive-img" src="/assets/resources/images/kyoto.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h6>Kyoto - Japão</h6>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modalJP"
+                            class="btn waves-effect waves-purple modal-trigger purple darken-3">Confirmar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="responsive-img" src="/assets/resources/images/montreall.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h6>Montreal - Canadá</h6>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modalCA"
+                            class="btn waves-effect waves-purple modal-trigger purple darken-3">Confirmar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row container">
+            <div class="col s6 m4 ">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="responsive-img" src="/assets/resources/images/paris.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h6>Paris - França</h6>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modalFR"
+                            class="btn waves-effect waves-purple modal-trigger purple darken-3">Confirmar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!--footer-->
+    <footer class="page-footer purple lighten-3"">
+</div>
+<div class=" footer-copyright">
+        <div class="container center">&copy; Copyright - Todos os direitos reservados / <a onclick="github()"
+                href="https://github.com/thomisz5/switch-intercambio " target="_blank" class="white-text">github</a>
+        </div>
+        </div>
+    </footer>
+    <script src="/assets/libraries/jquery/jquery-3.5.1.min.js">
+    </script>
+    <script src="/assets/libraries/materialize/js/materialize.js"></script>
+    <script src="/assets/resources/scripts/modal.js"></script>
+</body>
+
+</html>
