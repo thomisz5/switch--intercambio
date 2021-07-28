@@ -1,5 +1,5 @@
 # switch-intercambio
-https://drive.google.com/file/d/1lsSIeU4zQl8EFgs3qU_faxhr0uwxsY_o/view?usp=sharing
+
 Checkist
 
 Caixas de Diálogo
