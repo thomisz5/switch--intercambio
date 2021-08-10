@@ -1,3 +1,4 @@
+'use strict';
 //objeto com função construtora
 class User {
     constructor(username, password) {

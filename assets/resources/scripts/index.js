@@ -1,3 +1,5 @@
+'use strict';
+//strict para tratar exceptions
 $(document).ready(function () {
     $('.sidenav').sidenav();
 
@@ -8,7 +10,7 @@ $(document).ready(function () {
         interval: 2500,
     });
 
-})
+});
 
 
 //prompt
@@ -21,7 +23,7 @@ $(document).ready(function () {
 //funcao com nome
 //if/else
 //confirm
-let nome = prompt("Digite seu nome", "nome");
+let nome = prompt('Digite seu nome', 'nome');
 
 window.onload = function welcome() {
     window.alert(`Seja bem vindo(a) à Switch Intercâmbio, ${nome} !`);
@@ -31,9 +33,9 @@ window.onload = function welcome() {
 //onclick/funcao inline
 function github() {
     var val = window.confirm('Deseja ir para o github?');
-    if (val == true) {
-        window.open("https://github.com/thomisz5/switch-intercambio");
+    if (val === true) {
+        window.open('https://github.com/thomisz5/switch-intercambio');
     } else {
         window.alert('Continue explorando o site!');
     }
-};
+}
