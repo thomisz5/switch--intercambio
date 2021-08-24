@@ -61,7 +61,7 @@
                 <div class="col s12">
                     <div id="msg-login" class="card-panel purple-text" style="display: none"></div>
                 </div>
-                <form class="col s12" id="form-login" onsubmit="valida()">
+                <form action="" class="col s12" name="form-login">
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="inputUsername" type="text" class="validate" autofocus required />
@@ -74,11 +74,12 @@
                             <label for="inputPassword">Senha</label>
                         </div>
                     </div>
-                    <button class="btn waves-effect waves-light purple " type="submit" name="action">
+                    <button class="btn waves-effect waves-light purple" onclick="login()" type="submit" name="action">
                         Enviar
                         <i class="material-icons right">send</i>
                     </button>
                 </form>
+
             </div>
         </div>
     </main>

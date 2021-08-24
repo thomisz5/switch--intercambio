@@ -56,25 +56,33 @@
         <div id="modalRU" class="modal">
             <div class="modal-content">
                 <h2>PARABÉNS!</h2>
-                <p>Seu Intercâmbio para a Russia foi confirmado! Entraremos em contato pelo email! obrigado!</p>
+                <h3>Seu Intercâmbio para a Russia foi confirmado! obrigado!</h3>
+                <h4>Transfira o dinheiro pelo pix abaixo!</h4>
+                <img src="/assets/resources/images/pix.png">
             </div>
         </div>
         <div id="modalJP" class="modal">
             <div class="modal-content">
                 <h2>PARABÉNS!</h2>
-                <p>Seu Intercâmbio para Japão foi confirmado! Entraremos em contato pelo email! obrigado!</p>
+                <h3>Seu Intercâmbio para Japão foi confirmado! obrigado!</h3>
+                <h4>Transfira o dinheiro pelo pix abaixo!</h4>
+                <img src="/assets/resources/images/pix.png" alt="pix" class="center">
             </div>
         </div>
         <div id="modalFR" class="modal">
             <div class="modal-content">
                 <h2>PARABÉNS!</h2>
-                <p>Seu Intercâmbio para a França foi confirmado! Entraremos em contato pelo email! obrigado!</p>
+                <h3>Seu Intercâmbio para a França foi confirmado! obrigado!</h3>
+                <h4>Transfira o dinheiro pelo pix abaixo!</h4>
+                <img src="/assets/resources/images/pix.png">
             </div>
         </div>
         <div id="modalCA" class="modal">
             <div class="modal-content">
                 <h2>PARABÉNS!</h2>
-                <p>Seu Intercâmbio para o Canadá foi confirmado! Entraremos em contato pelo email! obrigado!</p>
+                <h3>Seu Intercâmbio para o Canadá foi confirmado! obrigado!</h3>
+                <h4>Transfira o dinheiro pelo pix abaixo!</h4>
+                <img src="/assets/resources/images/pix.png">
             </div>
         </div>
         <!--VAGAS-->
@@ -86,10 +94,12 @@
                     </div>
                     <div class="card-content">
                         <h6">São Petesburgo - Russia</h6>
+                            <br>
+                            <h7>R$ 500</h7>
                     </div>
                     <div class="card-action">
-                        <a href="#modalRU"
-                            class="btn waves-effect waves-light modal-trigger purple darken-3">Confirmar</a>
+                        <a href="#modalRU" class="btn waves-effect waves-light modal-trigger purple darken-3"
+                            onclick="addClass()">Confirmar</a>
                     </div>
                 </div>
             </div>
@@ -100,10 +110,11 @@
                     </div>
                     <div class="card-content">
                         <h6>Kyoto - Japão</h6>
+                        <h7>R$ 600</h7>
                     </div>
                     <div class="card-action">
-                        <a href="#modalJP"
-                            class="btn waves-effect waves-purple modal-trigger purple darken-3">Confirmar</a>
+                        <a href="#modalJP" class="btn waves-effect waves-purple modal-trigger purple darken-3"
+                            onclick="addClass()">Confirmar</a>
                     </div>
                 </div>
             </div>
@@ -114,10 +125,11 @@
                     </div>
                     <div class="card-content">
                         <h6>Montreal - Canadá</h6>
+                        <h7>R$ 400</h7>
                     </div>
                     <div class="card-action">
-                        <a href="#modalCA"
-                            class="btn waves-effect waves-purple modal-trigger purple darken-3">Confirmar</a>
+                        <a href="#modalCA" class="btn waves-effect waves-purple modal-trigger purple darken-3"
+                            onclick="addClass()">Confirmar</a>
                     </div>
                 </div>
             </div>
@@ -130,13 +142,34 @@
                     </div>
                     <div class="card-content">
                         <h6>Paris - França</h6>
+                        <h7>R$ 550</h7>
                     </div>
                     <div class="card-action">
-                        <a href="#modalFR"
-                            class="btn waves-effect waves-purple modal-trigger purple darken-3">Confirmar</a>
+                        <a href="#modalFR" class="btn waves-effect waves-purple modal-trigger purple darken-3"
+                            onclick="addClass()">Confirmar</a>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card purple lighten-3">
+                        <div class="card-content white-text">
+                            <h5>
+                                <p>Está em dúvida em qual país escolher para viajar? Sorteie entre eles pelo botão
+                                    abaixo!
+                                </p>
+                            </h5>
+                        </div>
+                        <div class="card-action">
+                            <a id="botaoSort"
+                                class="btn waves-effect waves-purple modal-trigger purple darken-3">Sorteie!
+                            </a>
+                            <span id="resultadoSort"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </main>
@@ -153,6 +186,8 @@
     </script>
     <script src="/assets/libraries/materialize/js/materialize.js"></script>
     <script src="/assets/resources/scripts/modal.js"></script>
+    <script src="/assets/resources/scripts/get.js"></script>
+    <!--  <script src="/assets/resources/scripts/sorteio.js"></script>-->
 </body>
 
 </html>

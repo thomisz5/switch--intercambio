@@ -1,5 +1,6 @@
 'use strict';
 //strict para tratar exceptions
+//jquery
 $(document).ready(function () {
     $('.sidenav').sidenav();
 
@@ -9,7 +10,6 @@ $(document).ready(function () {
         transition: 500,
         interval: 2500,
     });
-
 });
 
 
@@ -28,6 +28,7 @@ let nome = prompt('Digite seu nome', 'nome');
 window.onload = function welcome() {
     window.alert(`Seja bem vindo(a) à Switch Intercâmbio, ${nome} !`);
 };
+
 
 
 //onclick/funcao inline
