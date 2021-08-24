@@ -1,0 +1,28 @@
+{
+  "name": "switch--intercambio",
+  "version": "1.0.0",
+  "description": "# Checkist",
+  "scripts": {
+    "start": "parcel index.html",
+    "build:parcel": "parcel build index.html --public-url /switch--intercambio",
+    "build": "npm run clean:linux && npm run build:parcel",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d -dist",
+    "clean:linux": "rm -rm dist/*",
+    "clean:windows": "rd /s/q dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomisz5/switch--intercambio.git"
+  },
+  "author": "thomis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomisz5/switch--intercambio/issues"
+  },
+  "homepage": "https://github.com/thomisz5/switch--intercambio#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel": "^2.0.0-rc.0"
+  }
+}
