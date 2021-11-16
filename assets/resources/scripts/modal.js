@@ -23,12 +23,29 @@ $(document).ready(function () {
 });
 
 function addClass() { //css handle addClass
-    $('h2').addClass('white');
+    $('h2').addClass('wh');
 }
 //modal
 //querySelector
 const elemsModal = document.querySelectorAll('.modal');
 const instance = M.Modal.init(elemsModal);
+//criacao dos objetos
+
+
+let local = {
+
+}
+
+let cliente = {
+    nome: $('#inputUsername').val()
+
+}
+
+let pedido = {
+    cliente,
+    local
+};
+
 
 
 

@@ -17,28 +17,28 @@ Temporizadores
 
 Funções
 
-- [ ] Função anônima com argumento
-- [ ] Função anônima sem argumento
+- [x] Função anônima com argumento
+- [x] Função anônima sem argumento
 - [ ] Função anônima com retorno
 - [x] Função auto-executável
 - [x] Função com nome
-- [x] Função aninhada/local - declarar uma função dentro de outra
-- [x] Passagem de uma função como parâmetro
+- [ ] Função aninhada/local - declarar uma função dentro de outra
+- [ ] Passagem de uma função como parâmetro
 - [x] Função Flecha - Arrow Function
 
 Eventos
 
 - [x] Evento de carregamento do documento - onload
-- [ ] Evento de movimento do mouse
+- [x] Evento de movimento do mouse
 - [ ] Evento de teclado - usar charCode ou keyCode
-- [ ] Eventos de formulário - onfocus e onblur
+- [x] Eventos de formulário - onfocus e onblur
 - [ ] Imprimir alguma propriedade do objeto event recebido como parâmetro
 - [ ] Propagação de eventos no modelo bolha (usar target e currentTarget, ou seja, disparar o evento em um elemento filho e capturar em um elemento pai)
 
 Acesso aos elementos DOM do HTML
 
-- [ ] Via referência DOM pelo id do elemento HTML
-- [x] Via getElementByID()
+- [x] Via referência DOM pelo id do elemento HTML
+- [ ] Via getElementByID()
 - [ ] Via getElementsByName()
 - [ ] Via getElementsByTagName()
 - [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
@@ -59,7 +59,7 @@ Objetos Nativos
 
 Objetos
 
-- [ ] Criar objeto usando função construtora ou notação literal
+- [x] Criar objeto usando função construtora ou notação literal
 - [ ] Criar objetos a partir da definição de classes do ES6
 - [ ] Usar herança prototipal nativa ou herança de classes do ES6
 
