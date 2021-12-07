@@ -21,18 +21,50 @@ $(document).ready(function () {
     $('#inputUsername').on('blur', () => validaNome())
 
 
+    $('#inputPassword').mask('99999999'); //mascara jquery
+
+    const validaSenha = () => {
+        let senha = $('#inputPassword').val()
+
+        if (isNaN(senha)) {
+            alert('A senha informada precisa ser um número!')
+            return false;
+        } else {
+            return true;
+        }
+    }
+    $('#inputPassword').on('load', () => validaSenha())
+
+
 
     $('#form-login').on('submit', function (e) {
 
-        if (validaNome()) {
+        if (validaNome() && validaSenha()) {
             alert('Login com sucesso')
         } else {
-            e.preventDefault();
+            //e.preventDefault();
             alert('falha no login')
         }
     })
 
 })
+/*$('#inputCPF').mask('999.999.999-99'); //mascara jquery
+
+    const validaCPF = () => {
+        const regexCPF = /^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}/;
+        let cpf = $('#inputCPF').val();
+
+        if (!regexCPF.test(cpf)) {
+
+            return false;
+        } else {
+            return true;
+        }
+    }
+    $('#inputCPF').on('load', () => validaCPF())
+*/
+
+
 
 function github() {
     let val = window.confirm('Deseja ir para o github?');
@@ -45,6 +77,6 @@ function github() {
 
 window.onload = function () {
     setTimeout(function () {
-        window.alert('Preencha com Usuário e senha corretamente');
+        window.alert('Preencha os campos corretamente!');
     }, 1000);
 };

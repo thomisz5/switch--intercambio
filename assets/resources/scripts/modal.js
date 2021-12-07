@@ -23,7 +23,7 @@ $(document).ready(function () {
 });
 
 function addClass() { //css handle addClass
-    $('h2').addClass('wh');
+    $('h2').addClass('white');
 }
 //modal
 //querySelector
