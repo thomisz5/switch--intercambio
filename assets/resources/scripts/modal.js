@@ -1,4 +1,5 @@
 'use strict';
+
 $(document).ready(function () {
     $('.sidenav').sidenav();
 
@@ -34,12 +35,12 @@ const instance = M.Modal.init(elemsModal);
 
 let local = {
 
-}
+};
 
 let cliente = {
     nome: $('#inputUsername').val()
 
-}
+};
 
 let pedido = {
     cliente,

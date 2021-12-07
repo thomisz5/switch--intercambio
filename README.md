@@ -1,5 +1,5 @@
 # Link Prova 1
-https://youtu.be/izD1Eznyz_Y
+https://www.youtube.com/watch?v=5N4ZU-FxhaM
 
 # Checkist
 
@@ -80,9 +80,9 @@ Formulário
 - [ ] Validação de formulário com HTML5 API
   - [ ] Customizar as mensagens nos balões de mensagem
   - [x] Usar os atributos de validação dos inputs
-  - [ ] Usar expressões regulares
-- [ ] Ler e escrever em elementos input com a propriedade value
-- [ ] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
+  - [x] Usar expressões regulares
+- [x] Ler e escrever em elementos input com a propriedade value
+- [x] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 - [ ] Manipulação de elemento de listagem, como checkbox, radio ou select
 - [x] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
 
@@ -95,7 +95,7 @@ jQuery
 - [x] Especificar o tratador de algum evento via jQuery
 - [x] Manipulação do CSS via função css() e addClass()/removeClass()
 - [ ] Manipulação do conteúdo de um input e div usando jQuery
-- [ ] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
+- [x] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
 
 Web Storage
 

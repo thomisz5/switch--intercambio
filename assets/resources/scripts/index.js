@@ -33,7 +33,7 @@ window.onload = function welcome() {
 
 //onclick/funcao inline
 function github() {
-    var val = window.confirm('Deseja ir para o github?');
+    let val = window.confirm('Deseja ir para o github?');
     if (val === true) {
         window.open('https://github.com/thomisz5/switch-intercambio');
     } else {

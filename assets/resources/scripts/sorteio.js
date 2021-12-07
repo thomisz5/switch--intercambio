@@ -1,4 +1,5 @@
 'use strict';
+
 const paises = [
     'Russia',
     'Japão',

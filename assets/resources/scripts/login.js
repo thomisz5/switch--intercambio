@@ -9,45 +9,47 @@
 $(document).ready(function () {
 
     const validaNome = () => {
-        const regexCaracter = /[A-Zz-z]/g;
         let carac = $('#inputUsername').val();
+        const regexCaracter = /[A-Zz-z]/g;
 
         if (!regexCaracter.test(carac)) {
-            alert('o valor informado está vazio ou nao contem apenas caracteres!')
+            alert('o valor informado está vazio ou nao contem apenas caracteres!');
             return false;
         }
         return true;
-    }
-    $('#inputUsername').on('blur', () => validaNome())
+    };
+
+    $('#inputUsername').on('blur', () => validaNome());
 
 
-    $('#inputPassword').mask('99999999'); //mascara jquery
+    $('#inputPassword').mask('99999999'); //varmascara jquery
 
     const validaSenha = () => {
-        let senha = $('#inputPassword').val()
+        let senha = $('#inputPassword').val();
 
         if (isNaN(senha)) {
-            alert('A senha informada precisa ser um número!')
+            alert('A senha informada precisa ser um número!');
             return false;
         } else {
             return true;
         }
-    }
-    $('#inputPassword').on('load', () => validaSenha())
+    };
 
+    $('#inputPassword').on('load', () => validaSenha());
 
 
     $('#form-login').on('submit', function (e) {
 
         if (validaNome() && validaSenha()) {
-            alert('Login com sucesso')
+            alert('Login com sucesso');
         } else {
             //e.preventDefault();
-            alert('falha no login')
+            alert('falha no login');
         }
-    })
+    });
 
-})
+});
+
 /*$('#inputCPF').mask('999.999.999-99'); //mascara jquery
 
     const validaCPF = () => {
@@ -68,6 +70,7 @@ $(document).ready(function () {
 
 function github() {
     let val = window.confirm('Deseja ir para o github?');
+
     if (val === true) {
         window.open('https://github.com/thomisz5/switch-intercambio');
     } else {
