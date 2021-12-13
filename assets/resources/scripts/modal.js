@@ -49,7 +49,7 @@ let pedido = {
 
 
 
-
+//gomes corneto
 function github() {
     var val = window.confirm('Deseja ir para o github?');
     if (val === true) {
