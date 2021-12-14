@@ -33,23 +33,8 @@ const instance = M.Modal.init(elemsModal);
 //criacao dos objetos
 
 
-let local = {
-
-};
-
-let cliente = {
-    nome: $('#inputUsername').val()
-
-};
-
-let pedido = {
-    cliente,
-    local
-};
 
 
-
-//gomes corneto
 function github() {
     var val = window.confirm('Deseja ir para o github?');
     if (val === true) {

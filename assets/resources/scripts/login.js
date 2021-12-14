@@ -65,6 +65,49 @@ $(document).ready(function () {
     }
     $('#inputCPF').on('load', () => validaCPF())
 */
+$('#btnEnvia').on('click', () => {
+
+    /*let local = {
+        russia: $('#modalRU').val(),
+        japao: $('#modalJP').val(),
+        canada: $('#modalCA').val(),
+        franca: $('#modalFR').val(),
+    };*/
+
+    let cliente = {
+        nome: $('#inputUsername').val(),
+        cpf: $('#inputCPF').val(),
+    };
+
+    let relatorio = {
+        cliente,
+        // local
+    };
+
+    if (localStorage.getItem('relatorios')) {
+        let array = JSON.parse(localStorage.getItem('relatorios'));
+        console.log(array);
+
+        array.push(relatorio)
+
+        localStorage.setItem('relatorios', JSON.stringify(array));
+    } else {
+        let array = [];
+
+        array.push(relatorio);
+
+        localStorage.setItem('relatorios', JSON.stringify(array));
+    }
+});
+
+let arrayRelatorio = localStorage.getItem('relatorios');
+arrayRelatorio = JSON.parse(arrayRelatorio);
+
+arrayRelatorio.forEach(relatorio => {
+    console.log(relatorio);
+    $('#relatorio').append(`<p class="bordered"> Cliente: Nome ${relatorio.cliente.nome} CPF ${relatorio.cliente.cpf}`);
+});
+
 
 
 
@@ -81,5 +124,5 @@ function github() {
 window.onload = function () {
     setTimeout(function () {
         window.alert('Preencha os campos corretamente!');
-    }, 1000);
+    }, 3000);
 };
