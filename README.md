@@ -1,5 +1,3 @@
-# Link Prova 2
-https://youtu.be/5N4ZU-FxhaM
 
 # Checkist
 
